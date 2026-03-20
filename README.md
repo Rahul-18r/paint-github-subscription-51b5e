@@ -182,13 +182,22 @@ A Streamlit-based web scraping tool that combines Selenium, BeautifulSoup, and L
 ### 7. 📄 Resume Analyzer
 **Repository:** [Rahul-18r/resumeanalyzer](https://github.com/Rahul-18r/resumeanalyzer)
 
-A JavaScript-based tool for analysing resumes.
+A React-based web application for analysing resumes. Provides a clean frontend interface where users can submit and review resume content.
+
+**Features:**
+- React single-page application scaffold for resume analysis
+- Webpack-bundled production build with Babel transpilation
+- Modular component structure ready for extension
 
 **Tech Stack:**
 
 | Layer | Technology |
 |---|---|
-| Language | JavaScript |
+| Language | JavaScript (ES6+) |
+| UI Library | React 18.2 |
+| Bundler | Webpack 5 |
+| Transpiler | Babel 7 (preset-env, preset-react) |
+| Build Tool | webpack-cli + webpack-dev-server |
 
 ---
 
@@ -276,17 +285,37 @@ A Dropwizard application that handles car rental and hotel searches based on cit
 
 ---
 
-### 12. 🖥️ Backend (Ticket / Order Service)
+### 12. 🎪 Sambhram 2025 — Event Management System
 **Repository:** [Rahul-18r/Backend](https://github.com/Rahul-18r/Backend)
 
-A JavaScript backend service project.
+A full-stack event management platform built for **Sambhram 2025**, a college cultural fest. The system handles participant registration, ticket generation with QR codes, payment processing, and an admin portal for managing events and attendees.
+
+**Features:**
+- JWT-secured REST API with role-based access (admin / participant)
+- Online payment integration via Razorpay and Cashfree
+- QR-code-embedded PDF ticket generation using Puppeteer
+- AWS S3 integration for file and image storage
+- Admin portal (Vite + React) for participant oversight, analytics, and event management
+- Rate limiting, request logging (Winston/Morgan), and health-check endpoint
+- Production-ready CORS, 404 handler, and environment-aware logging
+- MongoDB data models for registrations, tickets, and admin users
 
 **Tech Stack:**
 
 | Layer | Technology |
 |---|---|
-| Language | JavaScript |
-| Runtime | Node.js |
+| Language | JavaScript (Node.js ≥ 18) |
+| Framework | Express 4.x |
+| Database | MongoDB (Mongoose 8.x) |
+| Authentication | JWT (jsonwebtoken) + bcryptjs |
+| Payment Gateways | Razorpay 2.x, Cashfree PG 5.x |
+| Cloud Storage | AWS S3 (aws-sdk v3) |
+| PDF / QR Tickets | Puppeteer 24.x, qrcode |
+| Rate Limiting | express-rate-limit |
+| Logging | Winston 3.x, Morgan |
+| Validation | express-validator |
+| Dev Tool | nodemon |
+| Frontend (Admin) | Vite + React (separate Admin/ directory) |
 
 ---
 
@@ -296,11 +325,15 @@ A JavaScript backend service project.
 |---|---|
 | **Java / Spring Boot** | Personel-Expense-Tracker, To-Do, research-assistant-chrome, urlshortener, hoen-scanner |
 | **Python** | VTU-Internship-Dairy, Disease-Prediction-from-Symptoms, Web-Scrapper-with-AI |
-| **JavaScript / React** | weather, Disease-Prediction-from-Symptoms (frontend), To-Do (frontend), resumeanalyzer, CyberSentinel, Backend |
+| **JavaScript / React** | weather, Disease-Prediction-from-Symptoms (frontend), To-Do (frontend), resumeanalyzer, CyberSentinel |
+| **Node.js / Express** | Backend (Sambhram 2025) |
+| **MongoDB** | Backend (Sambhram 2025) |
 | **MySQL** | Personel-Expense-Tracker, urlshortener |
 | **Machine Learning (scikit-learn)** | Disease-Prediction-from-Symptoms |
 | **LLM / AI** | Web-Scrapper-with-AI (LLaMA 3.2), research-assistant-chrome (Google Gemini) |
 | **Selenium / Browser Automation** | VTU-Internship-Dairy, Web-Scrapper-with-AI |
+| **Payment Gateways (Razorpay / Cashfree)** | Backend (Sambhram 2025) |
+| **AWS S3** | Backend (Sambhram 2025) |
 | **Docker** | (planned/used across multiple projects) |
 
 ---
